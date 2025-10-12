@@ -12,7 +12,7 @@ const SLIDE_CONTENT = [
     id: 1,
     title: "The Meeting Point of Science and Philosophy",
     subtitle: "MathCS.online is a learning platform that allows you to explore deep topics like Computer Science, Mathematics, Physics, and Philosophy from a fun, interactive, and modern perspective. Developed with great passion by archiristo.",
-    link: "/contact",
+    link: "https://mathcs.online/contact",
     styleType: "glass",
   },
   {

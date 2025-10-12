@@ -18,22 +18,22 @@ export default function AnimatedHeader() {
             />
           </Link>
         <nav className="hidden md:flex space-x-8">
-            <Link href="/math" className="text-gray-300 hover:text-blue-400 transition duration-150">
+            <Link href="https://mathcs.online/math" className="text-gray-300 hover:text-blue-400 transition duration-150">
               Mathematics
             </Link>
-            <Link href="/cs" className="text-gray-300 hover:text-blue-400 transition duration-150">
+            <Link href="https://mathcs.online/cs" className="text-gray-300 hover:text-blue-400 transition duration-150">
               Computer Science
             </Link>
-            <Link href="/physics" className="text-gray-300 hover:text-blue-400 transition duration-150">
+            <Link href="https://mathcs.online/physics" className="text-gray-300 hover:text-blue-400 transition duration-150">
               Physics
             </Link>
-            <Link href="/philosophy" className="text-gray-300 hover:text-blue-400 transition duration-150">
+            <Link href="https://mathcs.online/philosophy" className="text-gray-300 hover:text-blue-400 transition duration-150">
               Philosophy
             </Link>
           </nav>
 
           {/* Aksiyon Butonu */}
-          <Link href="/contact" className="px-3 py-2 text-sm font-medium rounded-md text-white bg-fuchsia-400 hover:bg-blue-700 transition duration-150">
+          <Link href="https://mathcs.online/contact" className="px-3 py-2 text-sm font-medium rounded-md text-white bg-fuchsia-400 hover:bg-blue-700 transition duration-150">
             Contact me
           </Link>
           
