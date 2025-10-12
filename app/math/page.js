@@ -13,8 +13,8 @@ export default function MathHomePage() {
       {/* Konu Kutuları */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <SubjectCard title="Video Lessons/Podcasts" description="You can check out my catchy and entertaining videos on my archiristo channel." link="https://www.youtube.com/@archiristo" />
-        <SubjectCard title="Cheatsheets" description="For lecture notes on each topic:" link="archiristo.gumroad.com" />
-        <SubjectCard title="Question Banks" description="To solve questions of all levels:" link="archiristo.gumroad.com" />
+        <SubjectCard title="Cheatsheets" description="For lecture notes on each topic:" link="https://archiristo.gumroad.com" />
+        <SubjectCard title="Question Banks" description="To solve questions of all levels:" link="https://archiristo.gumroad.com" />
       </div>
       <footer>Proudly made by archiristo, 2025</footer>
     </div>

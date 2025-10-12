@@ -13,7 +13,7 @@ const CONTACT_LINKS = [
     icon: '💻', // Gumroad (Dijital Ürünler) simgesi
     title: 'Digital Products (Gumroad)',
     description: 'A collection of premium guides, ebooks, and code templates. P.S.: You can also buy me a coffee :)',
-    link: 'archiristo.gumroad.com',
+    link: 'https://archiristo.gumroad.com',
   },
   {
     icon: '📺', // YouTube simgesi
