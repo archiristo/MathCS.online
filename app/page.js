@@ -33,38 +33,11 @@ export default function HomePage() {
 
       {/* 4. İçerik Listesinin Altına Öneriler */}
       <section className="w-full max-w-4xl text-center">
-        <h3 className="text-3xl font-bold text-gray-100 mb-6">
-          More contents here:
-        </h3>
+        
 
             <p className="text-xl text-gray-300 mb-4">
                 Follow me for the latest lessons, exclusive quizzes, and coding tips!
             </p>
-<div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8">
-    
-    {/* YouTube Linki */}
-    <Link 
-        href="https://www.youtube.com/@archiristo" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        // Mobil'de tam genişlik (w-full), büyük ekranda otomatik genişlik (md:w-auto)
-        className="w-full md:w-auto px-4 py-2 bg-red-600 text-white font-extrabold text-lg rounded-lg shadow-md shadow-cyan-500/50 hover:bg-red-700 transition duration-300"
-    >
-        archiristo&apos;s YouTube channel
-    </Link>
-</div>
-<div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8">
-    {/* Bağış Linki */}
-    <Link 
-        href="https://archiristo.gumroad.com/" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        // Mobil'de tam genişlik (w-full), büyük ekranda otomatik genişlik (md:w-auto)
-        className="w-full md:w-auto px-4 py-2 bg-green-600 text-white font-extrabold text-lg rounded-lg shadow-md shadow-cyan-500/50 hover:bg-green-700 transition duration-300"
-    >
-        You can support me here!
-    </Link>
-    </div>
 
 
         {/* Yeni Eklenen: Tişört/Merch Bölümü 
