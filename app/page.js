@@ -40,7 +40,6 @@ export default function HomePage() {
             <p className="text-xl text-gray-300 mb-4">
                 Follow me for the latest lessons, exclusive quizzes, and coding tips!
             </p>
-           // Butonları sarmalayan DIV'i bu şekilde güncelleyin
 <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8">
     
     {/* YouTube Linki */}
