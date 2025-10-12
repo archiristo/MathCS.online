@@ -66,7 +66,7 @@ export default function AutoCarousel() {
         return "bg-transparent"; };
 
     return (
-        <div className="w-full max-w-5xl h-72 overflow-hidden relative rounded-xl shadow-2xl">
+        <div className="w-full max-w-5xl h-48 sm:h-72 overflow-hidden relative rounded-xl shadow-2xl">
             <AnimatePresence initial={false} mode="wait">
                 <motion.div
                     key={currentIndex} 
@@ -76,7 +76,7 @@ export default function AutoCarousel() {
                     exit="exit"
                     transition={{ type: "spring", stiffness: 300, damping: 30 }} 
                     
-                    className={`absolute inset-0 flex items-center justify-start p-8 text-white ${getContainerStyles(currentSlide.styleType)}`}
+                    className={`absolute inset-0 flex items-center justify-start p-4 sm:p-8 text-white ${getContainerStyles(currentSlide.styleType)}`}
                 >
                     
                     {/* KOŞULLU RENDER: Eğer styleType 'image' ise görseli göster */}
@@ -99,11 +99,11 @@ export default function AutoCarousel() {
 
                     {/* 3. Metin İçeriği (Tüm Slaytlar için Ortak) */}
                     {/* Metin her zaman en üstte kalmalı */}
-                    <Link href={currentSlide.link} target="_blank" rel="noopener noreferrer" className="relative z-10 max-w-3xl cursor-pointer p-4 rounded-lg">
-                        <h2 className="text-4xl font-extrabold text-white mb-2 hover:underline">
+                    <Link href={currentSlide.link} target="_blank" rel="noopener noreferrer" className="relative z-10 max-w-3xl cursor-pointer p-2 sm:p-4 rounded-lg">
+                        <h2 className="text-2xl sm:text-4xl font-extrabold text-white mb-1 sm:mb-2 hover:underline">
                             {currentSlide.title}
                         </h2>
-                        <p className="text-xl text-white font-medium">
+                        <p className="text-base sm:text-xl text-white font-medium"> 
                             {currentSlide.subtitle}
                         </p>
                     </Link>
