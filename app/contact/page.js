@@ -40,7 +40,7 @@ export default function ContactPage() {
           <ContactLinkCard key={index} {...item} />
         ))}
       </div>
-      
+      <footer>Proudly made by archiristo, 2025</footer>
     </div>
   );
 }
