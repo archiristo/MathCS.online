@@ -52,7 +52,8 @@ export default function HomePage() {
     >
         archiristo&apos;s YouTube channel
     </Link>
-
+</div>
+<div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8">
     {/* Bağış Linki */}
     <Link 
         href="https://archiristo.gumroad.com/" 
@@ -63,8 +64,8 @@ export default function HomePage() {
     >
         You can support me here!
     </Link>
-    
-</div>
+    </div>
+
 
         {/* Yeni Eklenen: Tişört/Merch Bölümü 
         <div className="mt-12 bg-gray-800 p-8 rounded-lg shadow-xl">
