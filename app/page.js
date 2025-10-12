@@ -24,10 +24,10 @@ export default function HomePage() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Her bir kategori Box'ı için bir bileşen oluşturacağız */}
-          <CategoryBox title="Mathematics" link="/math" imageUrl="/images/math-bg.jpg"/>
-          <CategoryBox title="Computer Science" link="/cs" imageUrl="/images/cs-bg.jpg"/>
-          <CategoryBox title="Physics" link="/physics" imageUrl="/images/physics-bg.jpg"/>
-          <CategoryBox title="Philosophy" link="/philosophy" imageUrl="/images/philosophy-bg.jpg"/>
+          <CategoryBox title="Mathematics" link="/math/" imageUrl="/images/math-bg.jpg"/>
+          <CategoryBox title="Computer Science" link="/cs/" imageUrl="/images/cs-bg.jpg"/>
+          <CategoryBox title="Physics" link="/physics/" imageUrl="/images/physics-bg.jpg"/>
+          <CategoryBox title="Philosophy" link="/philosophy/" imageUrl="/images/philosophy-bg.jpg"/>
         </div>
       </section>
 

@@ -2,6 +2,8 @@
 const nextConfig = {
    // Railway'de en stabil dağıtım için statik çıktı
    output: 'export', 
+
+   trailingSlash: true, 
    
    // Image optimizasyon hatasını önlemek için
    images: {
