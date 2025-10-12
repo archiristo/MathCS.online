@@ -43,7 +43,7 @@ export default function HomePage() {
             {/* YouTube Kanalı Linki */}
             <Link href="https://www.youtube.com/@archiristo" target="_blank" rel="noopener noreferrer" 
                   className="px-8 py-4 bg-red-600 text-white font-extrabold text-lg rounded-lg shadow-md shadow-cyan-500/50 hover:bg-red-700 transition duration-300 mr-4">
-                archiristo's YouTube channel
+                archiristo&apos;s YouTube channel
             </Link>
             {/* Bağış linki */}
             <Link href="https://archiristo.gumroad.com/" target="_blank" rel="noopener noreferrer" 

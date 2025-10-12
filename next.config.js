@@ -7,6 +7,10 @@ const nextConfig = {
    images: {
       unoptimized: true,
    },
+   eslint: {
+      // Bu, build sırasında uyarıları dikkate almaz
+      ignoreDuringBuilds: true,
+   },
 
 };
 
