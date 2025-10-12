@@ -36,21 +36,36 @@ export default function HomePage() {
         <h3 className="text-3xl font-bold text-gray-100 mb-6">
           More contents here:
         </h3>
-        <div className="bg-gray-950 p-8 rounded-lg shadow-xl mb-8">
+
             <p className="text-xl text-gray-300 mb-4">
                 Follow me for the latest lessons, exclusive quizzes, and coding tips!
             </p>
-            {/* YouTube Kanalı Linki */}
-            <Link href="https://www.youtube.com/@archiristo" target="_blank" rel="noopener noreferrer" 
-                  className="px-4 py-2 bg-red-600 text-white font-extrabold text-lg rounded-lg shadow-md shadow-cyan-500/50 hover:bg-red-700 transition duration-300 mr-4">
-                archiristo&apos;s YouTube channel
-            </Link>
-            {/* Bağış linki */}
-            <Link href="https://archiristo.gumroad.com/" target="_blank" rel="noopener noreferrer" 
-                  className="px-4 py-2 bg-green-600 text-white font-extrabold text-lg rounded-lg shadow-md shadow-cyan-500/50 hover:bg-green-700 transition duration-300">
-                You can support me here!
-            </Link>
-        </div>
+           // Butonları sarmalayan DIV'i bu şekilde güncelleyin
+<div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8">
+    
+    {/* YouTube Linki */}
+    <Link 
+        href="https://www.youtube.com/@archiristo" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        // Mobil'de tam genişlik (w-full), büyük ekranda otomatik genişlik (md:w-auto)
+        className="w-full md:w-auto px-4 py-2 bg-red-600 text-white font-extrabold text-lg rounded-lg shadow-md shadow-cyan-500/50 hover:bg-red-700 transition duration-300"
+    >
+        archiristo&apos;s YouTube channel
+    </Link>
+
+    {/* Bağış Linki */}
+    <Link 
+        href="https://archiristo.gumroad.com/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        // Mobil'de tam genişlik (w-full), büyük ekranda otomatik genişlik (md:w-auto)
+        className="w-full md:w-auto px-4 py-2 bg-green-600 text-white font-extrabold text-lg rounded-lg shadow-md shadow-cyan-500/50 hover:bg-green-700 transition duration-300"
+    >
+        You can support me here!
+    </Link>
+    
+</div>
 
         {/* Yeni Eklenen: Tişört/Merch Bölümü 
         <div className="mt-12 bg-gray-800 p-8 rounded-lg shadow-xl">
