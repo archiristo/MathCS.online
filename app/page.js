@@ -1,73 +1,55 @@
-import Link from 'next/link'; 
-import AnimatedHeader from '../components/AnimatedHeader';
-import AutoCarousel from '@/components/AutoCarousel';
-export default function HomePage() {
+// app/page.js (veya pages/index.js)
+import Link from 'next/link';
+import ParticlesBackground from '@/components/ParticlesBackground'; // Yolu kendine göre düzelt
+import { Youtube, FlaskConical } from 'lucide-react'; // İkonlarımız
+
+export default function Home() {
   return (
-    // min-h-screen: Ekranın en az yüksekliği kadar yer kapla
-    // bg-gray-900: Koyu gri arka plan
-    // text-white: Metin rengi beyaz
-    <div className="min-h-screen text-white flex flex-col items-center py-10 px-4">
+    // Ana kapsayıcı: Koyu arka plan, tam ekran yükseklik.
+    <main className="relative flex min-h-screen flex-col items-center justify-center text-white overflow-hidden">
       
-      {/* 1. Header Bölümü */}
-      <AnimatedHeader />
+      {/* --- 1. KATMAN: ARKA PLAN --- */}
+      {/* Hazırladığımız parçacık efektini buraya çağırıyoruz. */}
+      <ParticlesBackground />
 
-      {/* 2. Amaç Yazısı Bölümü */}
-      <div className="mt-8 mb-16 w-full flex justify-center">
-                <AutoCarousel />
-            </div>
-      
-
-      {/* 3. Netflix Tarzı İçerik Listesi (Konu Kategorileri) */}
-      <section className="w-full max-w-6xl mb-16">
-        <h3 className="text-3xl font-bold text-gray-100 mb-6 text-center">
-          Start exploring!
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Her bir kategori Box'ı için bir bileşen oluşturacağız */}
-          <CategoryBox title="Mathematics" link="/math/" imageUrl="/images/math-bg.jpg"/>
-          <CategoryBox title="Computer Science" link="/cs/" imageUrl="/images/cs-bg.jpg"/>
-          <CategoryBox title="Physics" link="/physics/" imageUrl="/images/physics-bg.jpg"/>
-          <CategoryBox title="Philosophy" link="/philosophy/" imageUrl="/images/philosophy-bg.jpg"/>
-        </div>
-      </section>
-
-      {/* 4. İçerik Listesinin Altına Öneriler */}
-      <section className="w-full max-w-4xl text-center">
+      {/* --- 2. KATMAN: İÇERİK --- */}
+      {/* z-10 vererek parçacıkların önüne geçmesini sağlıyoruz. */}
+      <div className="z-10 flex flex-col items-center text-center px-4 max-w-4xl">
         
+        {/* Ana Başlık */}
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-400 mb-6 leading-tight">
+          The Intersection of Math, Minds, and Machines.
+        </h1>
 
-            <p className="text-xl text-gray-300 mb-4">
-                Follow me for the latest lessons, exclusive quizzes, and coding tips!
-            </p>
+        {/* Alt Başlık */}
+        <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl">
+          Hi, I'm <span className="text-purple-400 font-semibold">İris, as known as archiristo</span>. 
+          I am an engineering candidate who writes code, loves mathematics, and questions the "why" of artificial intelligence.<span className="block mt-2 text-sm text-slate-500">Welcome to where logic meets imagination.</span>
+        </p>
 
+        {/* Butonlar */}
+        <div className="flex flex-col sm:flex-row gap-4">
+          {/* Birinci Buton (Vurgulu) */}
+          <a 
+            href="https://youtube.com/@archiristo" // Kendi kanal linkini koy
+            target="_blank"
+            className="flex items-center justify-center gap-2 px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-full font-medium transition-all transform hover:scale-105 shadow-lg shadow-purple-500/25"
+          >
+            <Youtube size={20} />
+            Watch My Videos
+          </a>
 
-        {/* Yeni Eklenen: Tişört/Merch Bölümü 
-        <div className="mt-12 bg-gray-800 p-8 rounded-lg shadow-xl">
-            <h4 className="text-3xl font-bold text-gray-100 mb-6">
-                MathCS Apparel Koleksiyonu
-            </h4>
-            <p className="text-xl text-gray-300 mb-4">
-                Kod kültürünü ve bilim estetiğini MathCS.online tişörtleriyle üzerinde taşı!
-            </p>
-            <Link href="https://shopier.com/sizin-shopier-linkiniz" target="_blank" rel="noopener noreferrer"
-                  className="px-8 py-4 bg-blue-600 text-white font-extrabold text-lg rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-                Mağazamızı Keşfet
-            </Link>
-        </div>*/}
-      </section>
-        <footer>Proudly made by archiristo, 2025</footer>
-    </div>
-  );
-}
+          {/* İkinci Buton - Artık Çalışıyor! */}
+<Link 
+  href="/projects" 
+  className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-slate-700 hover:border-purple-500 text-slate-300 hover:text-white rounded-full font-medium transition-all bg-slate-900/50 backdrop-blur-sm"
+>
+  <FlaskConical size={20} />
+  Discover The Lab
+</Link>
+        </div>
 
-// CategoryBox Bileşeni
-function CategoryBox({ title, link, imageUrl }) {
-  return (
-    <Link href={link} 
-          className="relative block rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 group border border-cyan-700/50 hover:border-cyan-400 bg-gray-800/70">
-      <img src={imageUrl} alt={title} className="w-full h-48 object-cover opacity-60 group-hover:opacity-100 transition duration-300" />
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent p-4 flex items-end justify-start">
-        <h4 className="text-3xl font-bold text-white group-hover:text-blue-300 transition duration-300">{title}</h4>
       </div>
-    </Link>
+    </main>
   );
 }
