@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
   { name: 'Home', href: '/' },
+  { name: 'Astro', href: 'https://astro.mathcs.online' },
   { name: 'Projects', href: '/projects' },
   { name: 'Maths', href: '/mathematics' },
   { name: 'CS', href: '/computer-science' },

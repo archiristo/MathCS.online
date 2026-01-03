@@ -38,6 +38,7 @@ export default function Footer() {
               <FooterLink href="/about">About archiristo</FooterLink>
               <FooterLink href="/mathematics">Mathematics</FooterLink>
               <FooterLink href="/computer-science">Computer Science</FooterLink>
+              <FooterLink href="https://astro.mathcs.online">Astro</FooterLink>
             </ul>
           </div>
 
